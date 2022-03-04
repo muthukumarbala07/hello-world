@@ -1,0 +1,84 @@
+{
+  "metadata": {
+    "name": "TestProje",
+    "tags": [],
+    "asset_type": "wml_model",
+    "origin_country": "us",
+    "asset_category": "USER",
+    "created_at": "2022-03-04T11:35:04Z",
+    "created": 1646393704842,
+    "asset_id": "wml_model.TestProje",
+    "asset_attributes": [
+      "wml_model"
+    ]
+  },
+  "entity": {
+    "wml_model": {
+      "ml_version": "4.0.2",
+      "tags": [],
+      "software_spec": {
+        "base_id": "5c1b0ca2-4977-5c2e-9439-ffd44ea8ffe9"
+      },
+      "type": "pmml_4.3",
+      "schemas": {
+        "input": [
+          {
+            "id": "in_1",
+            "fields": [
+              {
+                "name": "AGE",
+                "type": "double"
+              },
+              {
+                "name": "BP",
+                "type": "string"
+              },
+              {
+                "name": "CHOLESTEROL",
+                "type": "string"
+              },
+              {
+                "name": "K",
+                "type": "double"
+              },
+              {
+                "name": "NA",
+                "type": "double"
+              },
+              {
+                "name": "SEX",
+                "type": "string"
+              }
+            ]
+          }
+        ],
+        "output": [
+          {
+            "id": "out_1",
+            "fields": [
+              {
+                "name": "DRUG",
+                "type": "string"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "attachments": [
+    {
+      "name": "native",
+      "asset_type": "wml_model",
+      "user_data": {
+        "content_format": "native"
+      },
+      "created_at": "2022-03-04T11:35:04Z",
+      "id": "635558af-d698-41f1-9e7f-d7ab6fb9c5c2",
+      "is_managed": true,
+      "is_referenced": false,
+      "is_remote": false,
+      "transfer_complete": true
+    }
+  ]
+}

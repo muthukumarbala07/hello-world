@@ -1,0 +1,85 @@
+{
+  "metadata": {
+    "name": "TestDrugmodel_fromfile",
+    "tags": [],
+    "asset_type": "wml_model",
+    "origin_country": "us",
+    "asset_category": "USER",
+    "created_at": "2022-02-28T07:15:00Z",
+    "created": 1646032500430,
+    "asset_id": "wml_model.TestDrugmodelfromfile",
+    "asset_attributes": [
+      "wml_model"
+    ],
+    "description": "Test model import from a file. "
+  },
+  "entity": {
+    "wml_model": {
+      "ml_version": "4.0.2",
+      "tags": [],
+      "software_spec": {
+        "base_id": "5c1b0ca2-4977-5c2e-9439-ffd44ea8ffe9"
+      },
+      "type": "pmml_4.3",
+      "schemas": {
+        "input": [
+          {
+            "id": "in_1",
+            "fields": [
+              {
+                "name": "AGE",
+                "type": "double"
+              },
+              {
+                "name": "BP",
+                "type": "string"
+              },
+              {
+                "name": "CHOLESTEROL",
+                "type": "string"
+              },
+              {
+                "name": "K",
+                "type": "double"
+              },
+              {
+                "name": "NA",
+                "type": "double"
+              },
+              {
+                "name": "SEX",
+                "type": "string"
+              }
+            ]
+          }
+        ],
+        "output": [
+          {
+            "id": "out_1",
+            "fields": [
+              {
+                "name": "DRUG",
+                "type": "string"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "attachments": [
+    {
+      "name": "native",
+      "asset_type": "wml_model",
+      "user_data": {
+        "content_format": "native"
+      },
+      "created_at": "2022-02-28T07:15:00Z",
+      "id": "c39a073d-0a27-4c40-aad1-2b31da5be86e",
+      "is_managed": true,
+      "is_referenced": false,
+      "is_remote": false,
+      "transfer_complete": true
+    }
+  ]
+}
