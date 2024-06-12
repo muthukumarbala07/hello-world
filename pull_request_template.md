@@ -1,6 +1,6 @@
 ### Description
 <!--
-Please include a summary of the changes and the related issue.
+Please include a summary of the changes
 -->
 
 ### Environment
@@ -30,7 +30,7 @@ For new feature or enchancement please proivde git hub task links or short summa
 If this PR is for SaaS
 
 - [ ] Does this change need to go to release branches ? If so please attach the PR details to release branches.
-- [ ] If the PR is made to intermediate branch, Did you make sure you raise the PR to master and other relates branches ?
+- [ ] If the PR is made to intermediate temp branch, make sure PRs are raised to master and other relates branches ?
 
 #### Important Note**
 
