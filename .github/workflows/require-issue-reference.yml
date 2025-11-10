@@ -1,0 +1,23 @@
+name: Require Issue Reference in PR
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize]
+
+jobs:
+  check-issue-reference:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check for issue reference
+        env:
+          PR_TITLE: ${{ github.event.pull_request.title }}
+          PR_BODY: ${{ github.event.pull_request.body }}
+        run: |
+          echo "Checking for issue references..."
+          if echo "$PR_TITLE $PR_BODY" | grep -E -q '#[0-9]+'; then
+            echo "✅ Issue reference found."
+          else
+            echo "❌ No issue reference found in PR title or body."
+            echo "Please mention an issue like 'Fixes #123' or 'Related to #456'."
+            exit 1
+          fi
